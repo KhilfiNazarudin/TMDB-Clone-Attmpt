@@ -1,0 +1,125 @@
+{
+    "fields": [
+      {
+        "name": "_id",
+        "path": "_id",
+        "count": 1,
+        "types": [
+          {
+            "name": "ObjectID",
+            "bsonType": "ObjectID",
+            "path": "_id",
+            "count": 1,
+            "values": [
+              "62f5d7b5815dbfb05ec62cfd"
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 1,
+            "has_duplicates": false
+          }
+        ],
+        "total_count": 1,
+        "type": "ObjectID",
+        "has_duplicates": false,
+        "probability": 1
+      },
+      {
+        "name": "__v",
+        "path": "__v",
+        "count": 1,
+        "types": [
+          {
+            "name": "Int32",
+            "bsonType": "Int32",
+            "path": "__v",
+            "count": 1,
+            "values": [
+              0
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 1,
+            "has_duplicates": false
+          }
+        ],
+        "total_count": 1,
+        "type": "Int32",
+        "has_duplicates": false,
+        "probability": 1
+      },
+      {
+        "name": "email",
+        "path": "email",
+        "count": 1,
+        "types": [
+          {
+            "name": "String",
+            "bsonType": "String",
+            "path": "email",
+            "count": 1,
+            "values": [
+              "postman@email.com"
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 1,
+            "has_duplicates": false
+          }
+        ],
+        "total_count": 1,
+        "type": "String",
+        "has_duplicates": false,
+        "probability": 1
+      },
+      {
+        "name": "feedback",
+        "path": "feedback",
+        "count": 1,
+        "types": [
+          {
+            "name": "String",
+            "bsonType": "String",
+            "path": "feedback",
+            "count": 1,
+            "values": [
+              "Postman reviews, this is unprotected. FREE SPEECH FROM THE PUBLIC"
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 1,
+            "has_duplicates": false
+          }
+        ],
+        "total_count": 1,
+        "type": "String",
+        "has_duplicates": false,
+        "probability": 1
+      },
+      {
+        "name": "title",
+        "path": "title",
+        "count": 1,
+        "types": [
+          {
+            "name": "String",
+            "bsonType": "String",
+            "path": "title",
+            "count": 1,
+            "values": [
+              "Postman Testing"
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 1,
+            "has_duplicates": false
+          }
+        ],
+        "total_count": 1,
+        "type": "String",
+        "has_duplicates": false,
+        "probability": 1
+      }
+    ],
+    "count": 1
+  }

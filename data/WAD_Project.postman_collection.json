@@ -1,0 +1,894 @@
+{
+	"info": {
+		"_postman_id": "678f23f7-3f33-43be-b17e-b91eeb6f4e33",
+		"name": "WAD_Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21680099"
+	},
+	"item": [
+		{
+			"name": "NegativeTest",
+			"item": [
+				{
+					"name": "loginUser Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "unknownUser",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "negativeTest",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loginAdmin Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "adminFailed",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "failedAdmin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "registerAdmin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Administrator2",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "admin2",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin2",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registerUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Demo account",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "username",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loginUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "user2",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "user2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loginAdmin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "submitFeedback",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "postman@email.com",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Postman Testing",
+							"type": "text"
+						},
+						{
+							"key": "feedback",
+							"value": "Postman reviews, this is unprotected. FREE SPEECH FROM THE PUBLIC",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/submitFeedback",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"submitFeedback"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "submitReview",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "movieId",
+							"value": "616037",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": " Ba-ba-ba-ba-ba-nana ",
+							"type": "text"
+						},
+						{
+							"key": "review",
+							"value": "User 2's review about Thor movie",
+							"type": "text"
+						},
+						{
+							"key": "userId",
+							"value": "62f5d6a620032e56b4449ac9",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/account/submitReview?token=e0538aa32e5b6ee6f38295bcdb78df22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"account",
+						"submitReview"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "e0538aa32e5b6ee6f38295bcdb78df22"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPopularMovies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/movie/popular?api_key=d531746f62591cbf027fc279fd5d3c44",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"movie",
+						"popular"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "d531746f62591cbf027fc279fd5d3c44"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMovieInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/movie/438148?api_key=d531746f62591cbf027fc279fd5d3c44",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"movie",
+						"438148"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "d531746f62591cbf027fc279fd5d3c44"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTrailerInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/movie/616037/videos?api_key=d531746f62591cbf027fc279fd5d3c44",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"movie",
+						"616037",
+						"videos"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "d531746f62591cbf027fc279fd5d3c44"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAReview",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/reviews/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"reviews",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "438148"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAUserByToken",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/account/getUser/:token?token=c34d874110e4561df89f59910ef4bc63",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"account",
+						"getUser",
+						":token"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "c34d874110e4561df89f59910ef4bc63"
+						}
+					],
+					"variable": [
+						{
+							"key": "token",
+							"value": "c34d874110e4561df89f59910ef4bc63"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/manage/users?token=6b2d738ab09b2896f29d5ec2d4d58dac",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"manage",
+						"users"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "6b2d738ab09b2896f29d5ec2d4d58dac"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllFeedbacks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/manage/feedbacks?token=6b2d738ab09b2896f29d5ec2d4d58dac",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"manage",
+						"feedbacks"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "6b2d738ab09b2896f29d5ec2d4d58dac"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "displayMap",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://developers.onemap.sg/commonapi/staticmap/getStaticImage?layerchosen=default&lat=1.31955&lng=103.84223&zoom=11&height=512&width=400&points=[1.40653611690554,103.90198817171,\"255,255,178\"]|[1.39130622992517,103.876085067727,\"255,255,178\"]|[1.31752384637596,103.892724428994,\"255,255,178\"]|[1.38506992325619,103.745238868238,\"255,255,178\"]|[1.30586800624384,103.831518269245,\"255,255,178\"]|[1.36041110472978,103.989426202914,\"255,255,178\"]|[1.33330633776983,103.740302426787,\"255,255,178\"]|[1.35009714832628,103.74921385957,\"255,255,178\"]|[1.30091736056425,103.90533928065,\"255,255,178\"]|[1.33332819303974,103.743359442234,\"255,255,178\"]|[1.37595122154029,103.955598940037,\"255,255,178\"]|[1.30151657681583,103.836473321142,\"255,255,178\"]|[1.43600784474269,103.78568873405,\"255,255,178\"]|[1.36919317898919,103.848464775629,\"255,255,178\"]",
+					"protocol": "https",
+					"host": [
+						"developers",
+						"onemap",
+						"sg"
+					],
+					"path": [
+						"commonapi",
+						"staticmap",
+						"getStaticImage"
+					],
+					"query": [
+						{
+							"key": "layerchosen",
+							"value": "default"
+						},
+						{
+							"key": "lat",
+							"value": "1.31955"
+						},
+						{
+							"key": "lng",
+							"value": "103.84223"
+						},
+						{
+							"key": "zoom",
+							"value": "11"
+						},
+						{
+							"key": "height",
+							"value": "512"
+						},
+						{
+							"key": "width",
+							"value": "400"
+						},
+						{
+							"key": "polygons",
+							"value": "[[1.31955,103.84223],[1.31755,103.84223],[1.31755,103.82223],[1.31755,103.81223],[1.31955,103.84223]]:255,255,105",
+							"disabled": true
+						},
+						{
+							"key": "lines",
+							"value": "[[1.31955,103.84223],[1.31801,103.83224]]:177,0,0:3",
+							"disabled": true
+						},
+						{
+							"key": "points",
+							"value": "[1.40653611690554,103.90198817171,\"255,255,178\"]|[1.39130622992517,103.876085067727,\"255,255,178\"]|[1.31752384637596,103.892724428994,\"255,255,178\"]|[1.38506992325619,103.745238868238,\"255,255,178\"]|[1.30586800624384,103.831518269245,\"255,255,178\"]|[1.36041110472978,103.989426202914,\"255,255,178\"]|[1.33330633776983,103.740302426787,\"255,255,178\"]|[1.35009714832628,103.74921385957,\"255,255,178\"]|[1.30091736056425,103.90533928065,\"255,255,178\"]|[1.33332819303974,103.743359442234,\"255,255,178\"]|[1.37595122154029,103.955598940037,\"255,255,178\"]|[1.30151657681583,103.836473321142,\"255,255,178\"]|[1.43600784474269,103.78568873405,\"255,255,178\"]|[1.36919317898919,103.848464775629,\"255,255,178\"]"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCathayLocation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://developers.onemap.sg/commonapi/search?searchVal=cathay cineplex&returnGeom=Y&getAddrDetails=Y",
+					"protocol": "https",
+					"host": [
+						"developers",
+						"onemap",
+						"sg"
+					],
+					"path": [
+						"commonapi",
+						"search"
+					],
+					"query": [
+						{
+							"key": "searchVal",
+							"value": "cathay cineplex"
+						},
+						{
+							"key": "returnGeom",
+							"value": "Y"
+						},
+						{
+							"key": "getAddrDetails",
+							"value": "Y"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getGVLocation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://developers.onemap.sg/commonapi/search?searchVal=golden village&returnGeom=Y&getAddrDetails=Y",
+					"protocol": "https",
+					"host": [
+						"developers",
+						"onemap",
+						"sg"
+					],
+					"path": [
+						"commonapi",
+						"search"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "searchVal",
+							"value": "golden village"
+						},
+						{
+							"key": "returnGeom",
+							"value": "Y"
+						},
+						{
+							"key": "getAddrDetails",
+							"value": "Y"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getVideo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.googleapis.com/youtube/v3/videos?part=player&id=4_hAjH8hK4U&key=AIzaSyBINaBNQu8Bj_WOxDgVuDu4uTX580PfMuk",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"youtube",
+						"v3",
+						"videos"
+					],
+					"query": [
+						{
+							"key": "part",
+							"value": "player"
+						},
+						{
+							"key": "id",
+							"value": "4_hAjH8hK4U"
+						},
+						{
+							"key": "key",
+							"value": "AIzaSyBINaBNQu8Bj_WOxDgVuDu4uTX580PfMuk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTrailerComments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.googleapis.com/youtube/v3/commentThreads?key=AIzaSyBINaBNQu8Bj_WOxDgVuDu4uTX580PfMuk&textFormat=plainText&part=snippet&videoId=4_hAjH8hK4U&maxResults=5",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"youtube",
+						"v3",
+						"commentThreads"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "AIzaSyBINaBNQu8Bj_WOxDgVuDu4uTX580PfMuk"
+						},
+						{
+							"key": "textFormat",
+							"value": "plainText"
+						},
+						{
+							"key": "part",
+							"value": "snippet"
+						},
+						{
+							"key": "videoId",
+							"value": "4_hAjH8hK4U"
+						},
+						{
+							"key": "maxResults",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchMovie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/search/movie?api_key=d531746f62591cbf027fc279fd5d3c44&query=Power Rangers",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"search",
+						"movie"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "d531746f62591cbf027fc279fd5d3c44"
+						},
+						{
+							"key": "query",
+							"value": "Power Rangers"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userId",
+							"value": "62ed17945d8ec29c7e6925d2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/manage/users?token=6b2d738ab09b2896f29d5ec2d4d58dac",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"manage",
+						"users"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "6b2d738ab09b2896f29d5ec2d4d58dac"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAFeedback",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "feedbackId",
+							"value": "62ed17dc5d8ec29c7e6925d6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/manage/feedbacks?token=6b2d738ab09b2896f29d5ec2d4d58dac",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"manage",
+						"feedbacks"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "6b2d738ab09b2896f29d5ec2d4d58dac"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "newName",
+							"value": "new user 2",
+							"type": "text"
+						},
+						{
+							"key": "newUsername",
+							"value": "user2",
+							"type": "text"
+						},
+						{
+							"key": "newPassword",
+							"value": "password2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/account/profile/:id?token=c34d874110e4561df89f59910ef4bc63",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"account",
+						"profile",
+						":id"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "c34d874110e4561df89f59910ef4bc63"
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "62ea224bede0d83a60942b44"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

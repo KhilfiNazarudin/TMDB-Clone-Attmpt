@@ -1,0 +1,215 @@
+{
+    "fields": [
+      {
+        "name": "_id",
+        "path": "_id",
+        "count": 4,
+        "types": [
+          {
+            "name": "ObjectID",
+            "bsonType": "ObjectID",
+            "path": "_id",
+            "count": 4,
+            "values": [
+              "62f5d701c8509bcebfbaf83f",
+              "62f5d6fcc8509bcebfbaf83d",
+              "62f5d6a620032e56b4449ac9",
+              "62f5d751c8509bcebfbaf84b"
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 4,
+            "has_duplicates": false
+          }
+        ],
+        "total_count": 4,
+        "type": "ObjectID",
+        "has_duplicates": false,
+        "probability": 1
+      },
+      {
+        "name": "__v",
+        "path": "__v",
+        "count": 4,
+        "types": [
+          {
+            "name": "Int32",
+            "bsonType": "Int32",
+            "path": "__v",
+            "count": 4,
+            "values": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 1,
+            "has_duplicates": true
+          }
+        ],
+        "total_count": 4,
+        "type": "Int32",
+        "has_duplicates": true,
+        "probability": 1
+      },
+      {
+        "name": "name",
+        "path": "name",
+        "count": 4,
+        "types": [
+          {
+            "name": "String",
+            "bsonType": "String",
+            "path": "name",
+            "count": 4,
+            "values": [
+              "user3",
+              "user",
+              "user2",
+              "Administrator2"
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 4,
+            "has_duplicates": false
+          }
+        ],
+        "total_count": 4,
+        "type": "String",
+        "has_duplicates": false,
+        "probability": 1
+      },
+      {
+        "name": "password",
+        "path": "password",
+        "count": 4,
+        "types": [
+          {
+            "name": "String",
+            "bsonType": "String",
+            "path": "password",
+            "count": 4,
+            "values": [
+              "user3",
+              "user",
+              "user2",
+              "admin2"
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 4,
+            "has_duplicates": false
+          }
+        ],
+        "total_count": 4,
+        "type": "String",
+        "has_duplicates": false,
+        "probability": 1
+      },
+      {
+        "name": "role",
+        "path": "role",
+        "count": 1,
+        "types": [
+          {
+            "name": "Undefined",
+            "type": "Undefined",
+            "path": "role",
+            "count": 3,
+            "total_count": 0,
+            "probability": 0.75,
+            "unique": 1,
+            "has_duplicates": true
+          },
+          {
+            "name": "String",
+            "bsonType": "String",
+            "path": "role",
+            "count": 1,
+            "values": [
+              "admin"
+            ],
+            "total_count": 0,
+            "probability": 0.25,
+            "unique": 1,
+            "has_duplicates": false
+          }
+        ],
+        "total_count": 4,
+        "type": [
+          "Undefined",
+          "String"
+        ],
+        "has_duplicates": true,
+        "probability": 0.25
+      },
+      {
+        "name": "token",
+        "path": "token",
+        "count": 2,
+        "types": [
+          {
+            "name": "String",
+            "bsonType": "String",
+            "path": "token",
+            "count": 2,
+            "values": [
+              "b4c3d628bba4d3d7bbe7993ec08eccc2",
+              "07a38b9c83b5174b8f132f86224feb7e"
+            ],
+            "total_count": 0,
+            "probability": 0.5,
+            "unique": 2,
+            "has_duplicates": false
+          },
+          {
+            "name": "Undefined",
+            "type": "Undefined",
+            "path": "token",
+            "count": 2,
+            "total_count": 0,
+            "probability": 0.5,
+            "unique": 1,
+            "has_duplicates": true
+          }
+        ],
+        "total_count": 4,
+        "type": [
+          "String",
+          "Undefined"
+        ],
+        "has_duplicates": true,
+        "probability": 0.5
+      },
+      {
+        "name": "username",
+        "path": "username",
+        "count": 4,
+        "types": [
+          {
+            "name": "String",
+            "bsonType": "String",
+            "path": "username",
+            "count": 4,
+            "values": [
+              "user3",
+              "user",
+              "user2",
+              "admin2"
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 4,
+            "has_duplicates": false
+          }
+        ],
+        "total_count": 4,
+        "type": "String",
+        "has_duplicates": false,
+        "probability": 1
+      }
+    ],
+    "count": 4
+  }

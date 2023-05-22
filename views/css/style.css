@@ -1,0 +1,53 @@
+nav div{
+    color: red;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+h1{
+    text-align: center;
+}
+
+#moviesContainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+#editMovie{
+    display: none;
+}
+
+.movieDetails{
+display: flex;
+font-size: 50px;
+}
+
+.movieDescription{
+    font-size: 30px;
+}
+
+#movieTitle{
+    text-align: center;
+    font-size: 75px;
+}
+
+.addMovie{
+    display: none;
+}
+
+.loginForm{
+    display: none;
+}
+
+.registerForm{
+    display: none;
+}
+
+.editDiv{
+    display: none;
+}
+#maps{
+    display: none;
+}

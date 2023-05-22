@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body >
+    <h1>PROFILE PAGE</h1>
+    <main>
+        <button class="editYourProfileBtn">Edit your profile</button>
+
+        <div class="yourInfo">
+
+        </div>
+    
+
+        <div class="editDiv">
+            <h2>Edit your profile</h2>
+            <form onsubmit="return editProfile();">
+                
+                <label for="newName">New Name:</label>
+                <input type="text" id="newName" name="newName"required><br>
+                
+                <label for="newUsername">New username:</label>
+                <input type="text" name="newUsername" id="newUsername" required> <br>
+
+                <label for="newPassword">New Password:</label> 
+                <input type="text" name="newPassword" id="newPassword" required><br>
+                
+
+                <input type="submit" value="Submit new changes">
+            </form >
+        </div>
+
+        <div class="editDiv">
+            <h2>Upload your image</h2>
+            <form action="/uploadImage" method="POST" enctype="multipart/form-data">
+              
+                <input  id="userIdForUpload" name='userIdForUpload' type="hidden" >
+                <label for="profile_image">Your new image</label><br>
+                <input type="file" name="profile_image" id="profile_image"><br>
+           
+
+                <input type="submit" value="Upload image">
+            </form >
+        </div>
+
+
+
+
+  
+    </main>
+    
+</body>
+<script src='js/jquery-3.6.0.min.js'></script>
+<script src='js/profile.js'></script>
+</html>

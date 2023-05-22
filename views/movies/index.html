@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- DISPLAY MOVIES-->
+    <nav>
+
+        <div>  <form action="/" method="get">
+            <label for="keyword">Movie title:</label>
+            <input type="text" name="keyword" id="keyword">
+                
+            </select>
+            <input type="submit" value="Submit">
+        </form></div>
+        <div class="logout"></div>
+
+        <div class="loginReg">
+            <button class="loginBtn">Login</button>
+        <section class="loginForm">
+            <form onsubmit="return login();">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" value=""><br>
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password" value=""><br>
+            <input type="submit" value="Login">
+            </form>
+            
+        </section>
+        <button class="registerBtn">Register</button>
+        <section class="registerForm">
+            <form onsubmit="return register()">
+            <label for="name">Name:</label>
+            <input type="text" id="nameR" name="name" value=""><br>
+            <label for="username">Username:</label>
+            <input type="text" id="usernameR" name="username" value=""><br>
+            <label for="password">Password:</label>
+            <input type="text" id="passwordR" name="password" value=""><br>
+
+            <input type="submit" value="Register">
+            </form>
+        </section><br>
+        </div>
+        
+        
+        
+    </nav>
+    
+    
+    <h1>WELCOME TO THE BEST MOVIE WEBAPP!</h1>
+    <button class="addMovieBtn">Leave a feedback or request a movie</button>
+    <section class="addMovie"> 
+        <form onsubmit="return addFeedback();">
+            
+            <label for="title">Title of feedback:</label>
+            <input type="text" id="title" name="title"required><br>
+            
+            <label for="feedback">Feedback body:</label>
+            <input type="text" name="feedback" id="feedback" required> <br>
+
+            <label for="email">Email</label> 
+            <input type="email" name="email" id="email" required><br>
+            
+
+            <input type="submit" value="Submit feedback">
+
+            <!-- <label for="poster_path">Movie poster:</label>
+            <input type="file" name="poster_path" id="poster_path"><br>
+            <input type="submit" value="UPLOADTEST"> -->
+        </form >
+    </section>
+    <button class="mapsBtn">Show cinemas near you</button>
+    <div class="maps" id="maps">
+
+    </div>
+    <div id="moviesContainer">
+       
+    </div>
+    
+    
+
+    <script src='js/jquery-3.6.0.min.js'></script>
+    <script src='js/index.js'></script>
+    <script src='js/auth.js'></script>
+   
+</body>
+
+<footer>
+    
+</footer>
+</html>

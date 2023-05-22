@@ -1,0 +1,155 @@
+{
+    "fields": [
+      {
+        "name": "_id",
+        "path": "_id",
+        "count": 2,
+        "types": [
+          {
+            "name": "ObjectID",
+            "bsonType": "ObjectID",
+            "path": "_id",
+            "count": 2,
+            "values": [
+              "62f5d7f2815dbfb05ec62d06",
+              "62f5d7dd815dbfb05ec62d01"
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 2,
+            "has_duplicates": false
+          }
+        ],
+        "total_count": 2,
+        "type": "ObjectID",
+        "has_duplicates": false,
+        "probability": 1
+      },
+      {
+        "name": "__v",
+        "path": "__v",
+        "count": 2,
+        "types": [
+          {
+            "name": "Int32",
+            "bsonType": "Int32",
+            "path": "__v",
+            "count": 2,
+            "values": [
+              0,
+              0
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 1,
+            "has_duplicates": true
+          }
+        ],
+        "total_count": 2,
+        "type": "Int32",
+        "has_duplicates": true,
+        "probability": 1
+      },
+      {
+        "name": "movieId",
+        "path": "movieId",
+        "count": 2,
+        "types": [
+          {
+            "name": "Int32",
+            "bsonType": "Int32",
+            "path": "movieId",
+            "count": 2,
+            "values": [
+              616037,
+              438148
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 2,
+            "has_duplicates": false
+          }
+        ],
+        "total_count": 2,
+        "type": "Int32",
+        "has_duplicates": false,
+        "probability": 1
+      },
+      {
+        "name": "review",
+        "path": "review",
+        "count": 2,
+        "types": [
+          {
+            "name": "String",
+            "bsonType": "String",
+            "path": "review",
+            "count": 2,
+            "values": [
+              "User 2's review about Thor movie",
+              "User 2's review about Minions:Rise of Gru"
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 2,
+            "has_duplicates": false
+          }
+        ],
+        "total_count": 2,
+        "type": "String",
+        "has_duplicates": false,
+        "probability": 1
+      },
+      {
+        "name": "title",
+        "path": "title",
+        "count": 2,
+        "types": [
+          {
+            "name": "String",
+            "bsonType": "String",
+            "path": "title",
+            "count": 2,
+            "values": [
+              " Ba-ba-ba-ba-ba-nana ",
+              " Ba-ba-ba-ba-ba-nana "
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 1,
+            "has_duplicates": true
+          }
+        ],
+        "total_count": 2,
+        "type": "String",
+        "has_duplicates": true,
+        "probability": 1
+      },
+      {
+        "name": "user",
+        "path": "user",
+        "count": 2,
+        "types": [
+          {
+            "name": "ObjectID",
+            "bsonType": "ObjectID",
+            "path": "user",
+            "count": 2,
+            "values": [
+              "62f5d6a620032e56b4449ac9",
+              "62f5d6a620032e56b4449ac9"
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 1,
+            "has_duplicates": true
+          }
+        ],
+        "total_count": 2,
+        "type": "ObjectID",
+        "has_duplicates": true,
+        "probability": 1
+      }
+    ],
+    "count": 2
+  }
